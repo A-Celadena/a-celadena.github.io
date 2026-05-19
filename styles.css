@@ -58,6 +58,15 @@ a.btn:hover{opacity:0.95}
 
 footer{padding:1.25rem 0;color:var(--muted);border-top:1px solid rgba(15,23,36,0.04);background:transparent}
 
+/* Skills visual styles */
+.skills-card{padding:1rem}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0.75rem}
+.skill{display:flex;flex-direction:column;gap:0.5rem}
+.skill-meta{display:flex;justify-content:space-between;align-items:center}
+.skill-bar{background:linear-gradient(90deg, rgba(15,23,36,0.04), rgba(15,23,36,0.02));height:10px;border-radius:999px;overflow:hidden}
+.skill-fill{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#06b6d4);border-radius:999px;transition:width 800ms cubic-bezier(.2,.8,.2,1)}
+
+
 /* Responsive tweaks */
 @media (max-width:560px){
   header .container{flex-direction:column;align-items:flex-start}
