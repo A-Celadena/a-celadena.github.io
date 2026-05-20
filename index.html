@@ -3,66 +3,165 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio — Graduating Computer Science A Student</title>
+  <title>Adrian Celadena — Portfolio</title>
   <meta name="description" content="Personal portfolio of a graduating Computer Science student">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Adrian Celadena</h1>
-    <p>Computer Science A — Graduating student</p>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <span class="brand-mark">AC</span>
+          <div>
+            <strong>Adrian Celadena</strong>
+            <p>Computer Science A · Graduating Student</p>
+          </div>
+        </div>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a graduating high school student passionate about software development, with hands-on experience in Java, HTML/CSS, and game development. I’ve built interactive games and web prototypes that emphasize clean design and responsive user experiences. I enjoy problem-solving, algorithmic thinking, and collaborative development, and I apply these skills to write readable, maintainable code. I plan to study Computer Science in college to deepen my technical expertise and contribute to larger software and game projects.
-      </p>
-    </section>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="card skills-card">
-        <div class="skills-grid">
-          <div class="skill">
-            <div class="skill-meta">
-              <strong>Java</strong>
-              <span class="muted">85%</span>
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Digital Portfolio</p>
+            <h1>Building modern software with clean design and thoughtful code.</h1>
+            <p class="hero-text">I’m a graduating Computer Science student specializing in Java, responsive web development, and interactive project design. My portfolio showcases reliable solutions, clear structure, and professional presentation.</p>
+            <div class="hero-actions">
+              <a class="btn" href="#projects">View Projects</a>
+              <a class="btn btn-outline" href="#contact">Get in Touch</a>
             </div>
-            <div class="skill-bar" aria-hidden="true">
-              <span class="skill-fill" style="width:85%"></span>
+          </div>
+
+          <div class="hero-panel card">
+            <div class="summary-row">
+              <div>
+                <p class="summary-label">Graduation</p>
+                <strong>2026</strong>
+              </div>
+              <div>
+                <p class="summary-label">Focus</p>
+                <strong>Software & Web</strong>
+              </div>
+            </div>
+            <div class="feature-list">
+              <div>
+                <strong>Java development</strong>
+                <p>Core programming and desktop application experience.</p>
+              </div>
+              <div>
+                <strong>Responsive web UI</strong>
+                <p>Clean interfaces built with HTML, CSS, and thoughtful layouts.</p>
+              </div>
+              <div>
+                <strong>Game design projects</strong>
+                <p>Interactive prototypes that emphasize user engagement.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <article>
-        <h3>Project Title</h3>
-        <p>Placeholder: Short description of a project and your role.</p>
-      </article>
-    </section>
+      <section id="about" class="section-block">
+        <div class="container section-intro">
+          <span class="section-tag">About</span>
+          <h2>Professional focus meets student energy.</h2>
+          <p>Committed to building projects with strong code quality, maintainable structure, and polished presentation. I’m preparing for college while delivering practical solutions for real-world problems.</p>
+        </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:adrianceladena@yahoo.com">adrianceladena@yahoo.com</a></p>
-    </section>
-  </main>
+        <div class="container cards-grid">
+          <div class="feature-card card">
+            <h3>Strategic thinking</h3>
+            <p>I break problems into clear tasks and use algorithms to build efficient solutions.</p>
+          </div>
+          <div class="feature-card card">
+            <h3>Reliable implementation</h3>
+            <p>My work emphasizes consistency, readability, and professional structure.</p>
+          </div>
+          <div class="feature-card card">
+            <h3>Design awareness</h3>
+            <p>I aim for polished interfaces with an intuitive experience for users and reviewers.</p>
+          </div>
+        </div>
+      </section>
 
-  <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
+      <section id="skills" class="section-block">
+        <div class="container section-intro">
+          <span class="section-tag">Skills</span>
+          <h2>Technical strengths</h2>
+          <p>Tools and languages I use regularly to create applications, games, and responsive web pages.</p>
+        </div>
+
+        <div class="container skills-card card">
+          <div class="skills-grid">
+            <div class="skill">
+              <div class="skill-meta"><strong>Java</strong><span>85%</span></div>
+              <div class="skill-bar" aria-hidden="true"><span class="skill-fill" style="width:85%;"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-meta"><strong>HTML &amp; CSS</strong><span>90%</span></div>
+              <div class="skill-bar" aria-hidden="true"><span class="skill-fill" style="width:90%;"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill-meta"><strong>Game development</strong><span>80%</span></div>
+              <div class="skill-bar" aria-hidden="true"><span class="skill-fill" style="width:80%;"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-block">
+        <div class="container section-intro">
+          <span class="section-tag">Projects</span>
+          <h2>Selected work</h2>
+          <p>Examples of projects that demonstrate clean design, strong implementation, and polished presentation.</p>
+        </div>
+
+        <div class="container projects-grid">
+          <article class="project-card card">
+            <p class="project-tag">Web Prototype</p>
+            <h3>Responsive banking dashboard</h3>
+            <p>Designed a dashboard layout with navigation, summary metrics, and interactive charts for a finance-themed web app.</p>
+          </article>
+          <article class="project-card card">
+            <p class="project-tag">Java Application</p>
+            <h3>Inventory management system</h3>
+            <p>Built a desktop app with organization, search, and data handling in Java for managing inventory and tasks.</p>
+          </article>
+          <article class="project-card card">
+            <p class="project-tag">Game Prototype</p>
+            <h3>Interactive challenge experience</h3>
+            <p>Developed a game concept with responsive controls, scoring, and polished visual feedback.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section-block">
+        <div class="container contact-card card">
+          <div>
+            <span class="section-tag">Contact</span>
+            <h2>Let's connect</h2>
+            <p>If you'd like to collaborate or review my work, send a message to the email below.</p>
+          </div>
+          <a class="btn btn-outline" href="mailto:adrianceladena@yahoo.com">adrianceladena@yahoo.com</a>
+        </div>
+      </section>
+    </main>
+
+  <footer class="footer-bar">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Adrian Celadena. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
